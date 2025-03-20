@@ -1,0 +1,711 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rules</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: url("img/banner/banner.png");
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<style>
+    /* Card Layout */
+    .single_performer {
+        position: relative;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+    }
+    .single_performer:hover {
+        transform: scale(1.03);
+    }
+    
+    /* Card Image */
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        height: 300px;
+    }
+    .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Hover Overlay */
+    .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transition: 0.4s ease;
+        border-radius: 15px;
+    }
+    
+    /* Scrollable Rules */
+    .card-overlay p {
+        max-height: 180px;
+        overflow-y: auto;
+        padding-right: 10px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    
+    /* Scrollbar Styling (Optional) */
+    .card-overlay p::-webkit-scrollbar {
+        width: 6px;
+    }
+    .card-overlay p::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+    .card-overlay p::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+    
+    /* Register Button */
+    .register-btn {
+        padding: 10px 20px;
+        background: #f90717;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        display: inline-block;
+        align-self: center;
+        transition: background 0.3s ease;
+    }
+    .register-btn:hover {
+        background-color: #4ae03c;
+    }
+    
+    /* Show overlay on hover */
+    .single_performer:hover .card-overlay {
+        opacity: 1;
+    }
+    </style>
+    
+    
+    
+    
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <marquee behavior="scroll" direction="left" scrollamount="8" style="width: 100%; padding: 10px 20px; background-color: transparent;">
+                                    <div style="display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: center; gap: 20px; width: max-content;">
+                                        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                                            <img src="img/logo.png" alt="Logo 1" style="border-radius: 50%; width: 10vw; height: auto; max-width: 85px; display: block;">
+                                        </a>
+                                        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                                            <img src="img/logo1.png" alt="Logo 2" style="border-radius: 50%; width: 10vw; height: auto; max-width: 85px; display: block;">
+                                        </a>
+                                        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                                            <img src="img/logo2.png" alt="Logo 3" style="border-radius: 50%; width: 10vw; height: auto; max-width: 85px; display: block;">
+                                        </a>
+                                        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                                            <img src="img/logo3.jpg" alt="Logo 4" style="border-radius: 50%; width: 10vw; height: auto; max-width: 85px; display: block;">
+                                        </a>
+                                        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                                            <img src="img/csd.png" alt="Logo 1"
+                                            style="border-radius: 50%; width: 10vw; height: auto; max-width: 85px; display: block;">
+                                        </a>
+                                    </div>
+                                </marquee>
+                                
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="Performer.html">Events</a></li>
+                                            <li><a href="Rules.html">Rules</a></li>
+                                            
+                                            <!-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="about.html">about</a></li>
+                                                    <li><a href="Program.html">Program</a></li>
+                                                    <li><a href="Venue.html">Venue</a></li>
+                                                    <li><a href="elements.html">elements</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li><a href="contact.html">Contact</a></li> -->
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="buy_tkt">
+                                    <!-- <div class="book_btn d-none d-lg-block">
+                                        <a href="performer.html">Register</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+     <!-- bradcam_area -->
+     <div class="bradcam_area">
+        <div class="single_bradcam  d-flex align-items-center bradcam_bg_1 overlay">
+              <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                       <div class="col-xl-12">
+                          <div class="bradcam_text text-center">
+                            <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <img src="img/shape/shape_1.svg" alt="">
+                            </div>
+                            <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
+                                <img src="img/shape/shape_2.svg" alt="">
+                            </div>
+                                <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="font-family:'Times New Roman', Times, serif; letter-spacing: 3px; font-weight: 900;">Events Rules</h3>
+                          </div>
+                       </div>
+                    </div>
+              </div>
+           </div>
+     </div>
+    <!-- bradcam_area end -->
+
+    <!-- performar_area_start  -->
+    <div class="performar_area black_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="font-family: 'Times New Roman', Times, serif; letter-spacing: 3px; font-weight: 900;">Events Rules</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/1.png" alt="">
+                                    <div class="card-overlay">
+                                        <!-- <p><strong>Rules:</strong><br>Teams of 2<br>CodeStrive.</p> -->
+                                        <p>Rules and Regulations for Coding Competition
+                                            *	Entry Fee: ₹100 per team. <br>
+                                            *	Team Composition: A team can have a maximum of 2 members. <br>
+                                            *	Competition Structure: The competition consists of 3 rounds. <br> <br>
+                                            Round 1: Quiz <br>
+                                            *	The quiz will consist of 50 multiple-choice questions (MCQs). <br>
+                                            *	Participants will have 60 minutes to complete the quiz. <br>
+                                            *	There will be no negative marking. <br>
+                                            *	Questions will be based on C, C++, Java, and Python. <br> <br>
+                                             Round 2: Code <br>
+                                            *	Participants can use any programming language of their choice.<br>
+                                            *	There will be 3 coding questions<br>
+                                            *	The time duration for this round is 1 hour. <br> <br>
+                                            Round 3: Decode <br>
+                                            *	Participants will be given a piece of code that may be written in C, C++, Java, or Python. <br>
+                                            *	The task is to analyse and debug the given code. <br>
+                                            *	The time duration for this round is 1 hour. <br> <br>
+                                            
+                                            
+                                          Event Rules & Guidelines: <br>
+                                         
+                                            1.	Fair Play: <br>
+                                            *	Any form of plagiarism, cheating, or discussion with other teams will lead to disqualification. <br> <br>
+                                            2.	Decision of Judges: <br>
+                                            *	The organizing committee/judges’ decision is final in case of disputes. <br> <br>
+                                            3.	Internet & Resources: <br>
+                                            *	The internet is not allowed, except for referring to syntax documentation. <br>
+                                            *	Participants must write their own code without external help. <br> <br>
+                                            4.	System Usage: <br>
+                                            *	Participants must use the pre-allocated systems/laptops provided or as per event guidelines. <br> <br>
+                                            5.	Tie-Breaker Rule: <br>
+                                            *	If there is a tie, factors like execution time, code efficiency, or an extra problem-solving challenge will determine the winners. <br><br>
+                                            
+                                            </p>
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvpu7meNninng9wIPotlSPxjs8x0XTX4rsN6EcfWqwQ6eYDg/viewform?usp=preview" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>CodeStrive</h4>
+                                    <span>Quiz-Code-Decode</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 2 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/2.png" alt="">
+                                    <div class="card-overlay">
+                                        <!-- <p><strong>Rules:</strong><br>Solo or duo.<br>Max slides: 10.</p> -->
+                                        <p>
+                                            1. Format and Content <br> 
+                                           * Use A4 sized paper. <br> 
+                                           * The paper should be in the IEEE format. <br>
+                                           * The presentation must consist of 10 slides. <br>
+                                           * Use 10–12 pt Times New Roman font. <br>
+                                           * Number figures, tables, and equations consecutively. <br>
+                                           * Innovative Ideas can also be present.
+                                           <br><br>
+                                           2. Submission
+                                           * Submit your paper in Microsoft Word or LaTeX format. <br>
+                                           * Also, submit a corresponding PDF version of your manuscript. <br>
+                                           * The paper must be original and unpublished. <br>
+                                           * The team of two members can present. <br>
+                                           * Failure to comply with these rules may result in disqualification. <br>
+                                           * Submit your paper before 28th March.
+                                        </p>
+                                        <a href="register.html" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>Paper Presentation</h4>
+                                    <span>Technical Paper Submission</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 3
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/3.png" alt="">
+                                    <div class="card-overlay">
+                                       <p>
+                                        BGMI:
+<br><br>
+      *  Player level must be more than lvl 20. <br>
+  *   Ranked tier must be greater than silver. <br>
+1.	Game Mode:  <br>
+      *  All games will be in Classic mode. <br><br>
+2. Game Version: <br>
+ * All players must have the latest version of BGMI installed on their device, with all classic maps downloaded. <br>
+a.	Team Structure: Teams should have a fixed number of players.  <br>
+b.	All handheld devices are allowed mobile and tabs etc. <br>
+c.	Solo, Duo, and Trio registrations are also allowed and will be grouped accordingly. <br><br>
+d.	Must carry charger and power banks as there will be no charging sockets in the play room the players can charge there devices in the classrooms which are available. <br><br>
+e.	Prohibited Actions: Strictly no hacking, cheating, or use of unauthorized software. Players found violating these rules will be disqualified. <br><br>
+f.	During matchmaking if any of the players are exited for any reasons the match won’t be restarted and there team can continue the match or forfeit. If the player restarts and can join the match then he must do it quickly.  <br><br>
+A.	Team Requirements:<br><br>
+a.	Team Composition: Each team must maintain exactly four players during official competitions. <br><br>
+b.	Team Leader: Designate one player as the Team Leader during registration. The Team Leader will handle all communications with Tournament Officials. <br><br>
+
+B.	Gameplay Rules: <br>
+a.	Event is done in the form of league so there will be 2 groups i.e group A and group B. <br>    
+b.	Group A and group B will have different rooms and with assigned slots for each team. <br>
+c.	First 3 rounds will be ELIMINATION round i.e map ERANGLE , SANHOK , MIRAMAR. <br>
+d.	Top 8 teams from group A and Top 8 teams from group B will be qualified for finals. <br>
+e.	Qualified teams from group A and B will play together. <br>
+f.	Qualified team will have 4 maps for finals i.e ERANGLE, MIRAMAR,SANHOK,VIKENDI. <br>
+g.	The finals will be played according the point table system .
+<br><br>
+
+
+C.	Point Distribution System <br>
+a.	1st place: 10 Points <br>
+b.	 2nd place: 6 Points <br>
+c.	3rd place: 5 Points <br>
+d.	4th place: 4 Points <br>
+e.	5th place: 3 Points <br>
+f.	6th place: 4 Points <br>
+g.	 7th place: 1 Point <br>
+h.	8th place: 1 Point <br>
+i.	1 point per kill <br>
+j.	The winner will be decided with the highest points. <br>
+<br> <br> 
+  Free Fire
+ <br> <br>
+
+a.	Team type :Squad <br>
+b.	Map:Random So all maps should be downloaded <br>
+c.	Hacks and cheats are prohibited <br>
+d.	Player Eligibility :Player must have Minimum Level of 35 <br>
+e.	Disqualification :A player using hacks will lead to team disqualification. <br>
+f.	Network and other support are not provided by the host. <br>
+g.	Team leader must provide team details with  name and ID's. <br>
+h.	Winner will be decided on points: For 1-kill-1 point there will be position points for team <br>
+i.	6--1 points <br>
+j.	5--3 points  <br>
+k.	4--4 points <br>
+l.	3--5 points  <br>
+m.	2--6 points <br>
+n.	for booyah—10 <br>
+o.	Further Rules are provided before the match. <br>
+
+
+                                       </p>
+                                        <a href="register.html" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>E-Sport</h4>
+                                    <span>BGMI / Free Fire</span>
+                                </div>
+                            </div>
+                        </div> -->
+                
+                        <!-- Card 4 -->
+                        <!-- <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/4.png" alt="">
+                                    <div class="card-overlay">
+                                       <p>Treasure Hunt
+                                        <br> <br>
+                                        REGISTRATION FEE: ₹100 per Team
+                                        <br> <br>
+                                        1.	RULES AND REGULATIONS: <br>
+                                        a.	Each team must have 4 members, and they will be provided with 5 clues. <br>
+                                        b.	The first clue will involve decoding a phone number, which will lead the team to their respective coordinator, who will then provide the second clue. <br>
+                                        c.	The team that solves all five clues the fastest will be declared the winner. <br> 
+                                        d.	No external devices (such as mobile phones, calculators, or smartwatches) are allowed. <br>
+                                        e.	No vehicles (bicycles, bikes, or any other mode of transport) are permitted. Teams must complete the hunt on foot. <br><br>
+                                        
+                                        3.DISQUALIFICATION CRITERIA: <br>
+                                        a.	Any team found engaging in unfair practices will be disqualified immediately. <br>
+                                        
+                                        a.	JUDGING CRITERIA: <br>
+                                        a.	The first two teams to successfully solve all five clues will be declared Winners and Runners-up.
+                                        
+                                        </p>
+                                        <a href="register.html" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>Treasure Hunt</h4>
+                                    <span>Adventure Puzzle Game</span>
+                                </div>
+                            </div>
+                        </div> -->
+                
+                        <!-- Card 5 -->
+                        <!-- <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/5.png" alt="">
+                                    <div class="card-overlay">
+                                      <p>Snake And Ladder ( solo only for girls):
+                                        <br> <br>
+                                        
+                                        1.	The game is played by 2 or more players. <br>
+                                        2.	The fees per person is 50/-. <br>
+                                        3.	Players take turns rolling a single dice and move forward by the number shown on the dice. <br>
+                                        4.	If a player lands on a snake, they move back to the tail, and if they land on a ladder, they climb up to the top. <br>
+                                        5.	The first player to reach the last square (usually 100) wins the game. Players must roll the exact number to land on the last square. <br>
+                                        6.	Players should take turns in a clockwise order, and no cheating or skipping turns is allowed. <br><br>
+                                        
+                                        NOTE: Based on the number of players, the rounds will be conducted. 4 players play at a time, and the winners will move to the next round.
+                                        </p>
+                                        <a href="register.html" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>Snake Ladder</h4>
+                                    <span>Fun Strategic Game</span>
+                                </div>
+                            </div> -->
+                        </div>
+                
+                        <!-- Card 6 -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_performer">
+                                <div class="thumb">
+                                    <img src="img/performer/6.png" alt="">
+                                    <div class="card-overlay">
+                                      <p>Collage Making
+                                        <br> <br>
+                                        1.	Team of 2 or 4. <br>
+                                        2.	Per team fee:100 <br>
+                                        3.	Choose a clear theme (e.g., nature, technology, emotions). Ensure all images and elements align with the theme. <br>
+                                        4.	Follow the given size/dimension requirements (e.g., A3, A4). Use a sturdy base (cardboard, canvas, or digital medium). <br>
+                                        5.	Avoid copying directly—add your own artistic touch.<br>
+                                        6.	Avoid offensive or inappropriate content.<br>
+                                        7.	Label your work properly if required.
+                                        </p>
+                                        <a href="register.html" class="register-btn">Register</a>
+                                    </div>
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>Collage</h4>
+                                    <span>Creative Artwork</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- performar_area_end  -->
+
+
+    <!-- map_area_start  -->
+    <div class="map_area">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.699840013409!2d75.89902897486962!3d14.444453986023595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bba2561f2bd44dd%3A0xa8704e3e4495d20e!2sDepartment%20of%20Computer%20Science!5e0!3m2!1sen!2sin!4v1741267520916!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: -25.363,
+                    lng: 131.044
+                };
+                var grayStyles = [{
+                        featureType: "all",
+                        stylers: [{
+                                saturation: -90
+                            },
+                            {
+                                lightness: 50
+                            }
+                        ]
+                    },
+                    {
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#ccdee9'
+                        }]
+                    }
+                ];
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {
+                        lat: -31.197,
+                        lng: 150.744
+                    },
+                    zoom: 9,
+                    styles: grayStyles,
+                    scrollwheel: false
+                });
+            }
+        </script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
+        </script>
+        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <h3>Concert 2020</h3>
+            <div class="info_wrap">
+                <div class="single_info">
+                    <span>Vanue:</span>
+                    <p>26/A, Coontum Avenu
+                        New York-2783</p>
+                </div>
+                <div class="single_info">
+                    <span>Phone:</span>
+                    <p>+10 (88) 267 368 283</p>
+                </div>
+                <div class="single_info">
+                    <span>Email:</span>
+                    <p>contact@concert20.com</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- map_area_end  -->
+
+    <!-- brand_area_start  -->
+    <!-- <div class="brand_area black_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-80">
+                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand_wrap">
+                        <div class="brand_active owl-carousel">
+                            <div class="single_brand text-center">
+                                <img src="img/brand/1.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/2.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/3.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/4.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/5.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/1.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- brand_area_end  -->
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="footer_widget">
+                            <div class="address_details text-center">
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">April 3-4, 2025</h4>
+                                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Department of Computer Science and Design
+                                    BIET, Davanagere, Karnataka 577004</h3>
+                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly
+                                    attracts a diverse range of attendees from around the world.</p>
+                                <a href="performer.html"  style="background: linear-gradient(135deg, black, navy); color: white; border: none; padding: 12px 24px; font-size: 18px; cursor: pointer; border-radius: 8px; transition: all 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);" 
+                                onmouseover="this.style.boxShadow='0 8px 20px rgba(0, 255, 0, 0.7)'; this.style.transform='translateY(-2px)';" 
+                                onmouseout="this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.5)'; this.style.transform='translateY(0)';">
+                            Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+<div class="footer_credits text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="
+padding: 20px 0;
+background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(0,0,50,0.9));
+border-top: 1px solid rgba(255,255,255,0.1);
+">
+<p style="
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+">
+    © 2025 CODEVINYAS 1.0 | All Rights Reserved
+</p>
+<div class="developer_credits" style="
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a8a8a8;
+">
+ Web Design & Developed  <span style="color: #ff4d4d;"></span> by:
+    <span style="
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+    "></span>
+     <span> Ajay Kumar D S |</span>
+     <span> Harsha K C </span>
+  <br>
+  <span>Poster Designed by:</span>
+  <span> Sandesh Gowda M N</span>
+</div>
+</div>                       
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
