@@ -80,6 +80,93 @@
             width: 50px;
         }
     }
+
+    .slider_text h1 {
+        font-size: 60px;
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 20%;
+    }
+
+    .glow_title {
+        font-size: 70px;
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 0 0 5px #4400ff, 0 0 10px #9747ff, 0 0 15px #7050ff, 0 0 20px #8400ff;
+        animation: glowText 2s ease-in-out infinite alternate;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .event_date {
+        font-size: 70px;
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 0 0 5px #4400ff, 0 0 10px #9747ff, 0 0 15px #7050ff, 0 0 20px #8400ff;
+        animation: glowText 2s ease-in-out infinite alternate;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    @keyframes glowText {
+        from {
+            text-shadow: 0 0 5px #4400ff, 0 0 10px #9747ff, 0 0 15px #7050ff, 0 0 20px #8400ff;
+        }
+        to {
+            text-shadow: 0 0 10px #4400ff, 0 0 20px #9747ff, 0 0 30px #7050ff, 0 0 40px #8400ff;
+        }
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        .slider_text h1 {
+            font-size: 32px;
+            margin-top: 30%;
+            line-height: 1.3;
+        }
+
+        .glow_title {
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+
+        .event_date {
+            font-size: 40px;
+        }
+
+        .event_date {
+            font-size: 20px !important;
+        }
+
+        .tech_symposium {
+            font-size: 36px !important;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .slider_text h1 {
+            font-size: 24px;
+            margin-top: 40%;
+        }
+
+        .glow_title {
+            font-size: 32px;
+        }
+
+        .event_date {
+            font-size: 32px;
+        }
+
+        .event_date {
+            font-size: 16px !important;
+        }
+
+        .tech_symposium {
+            font-size: 28px !important;
+        }
+    }
 </style>
 
 
@@ -170,7 +257,7 @@
 
     <!-- slider_area_start -->
     <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+        <div class="single_slider d-flex align-items-center slider_bg_1 overlay">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-12">
@@ -181,84 +268,22 @@
                             <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">
                                 <img src="img/shape/shape_2.svg" alt="">
                             </div>
-                          
-                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"><h1 style="color:rgb(255, 255, 255); font-size: 60px;font-family: 'Times New Roman', Times, serif; margin-top: 20%"> BAPUJI  INSTITUTE OF  ENGINEERING AND  TECHNOLOGY</h1></span>
-                            <h1 style="
-    font-size: 70px;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif; /* Updated color */
-    text-shadow: 0 0 5px #4400ff, 0 0 10px #9747ff, 0 0 15px #7050ff, 0 0 20px #8400ff;
-    animation: glowText 2s ease-in-out infinite alternate;
-    display: inline-block;
-    font-weight: bold;
-    letter-spacing: 2px;
-">
-    CODEVINYAS 1.0
-</h1>
-                    
-                    
-                                            <!-- Add this once inside your HTML <head> or before </body> -->
-                        <style>
-                        @keyframes glowText {
-                          0% {
-                            text-shadow: 0 0 5px #c374e0, 0 0 10px #814cdc, 0 0 15px #3678da, 0 0 20px #7b2cd5;
-                          }
-                          100% {
-                            text-shadow: 0 0 10px #a451ed, 0 0 20px #8946e2, 0 0 30px #7633d3, 0 0 40px #a922de;
-                          }
-                        }
-                        
-                        </style>
-                        <br>
-                                    <h2 style="
-    font-size: 28px;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif; /* Updated color */
-    text-shadow: 0 0 5px #4400ff, 0 0 10px #9747ff, 0 0 15px #7050ff, 0 0 20px #8400ff;
-    animation: glowText 2s ease-in-out infinite alternate;
-    display: inline-block;
-    font-weight: bold;
-    letter-spacing: 2px;">
-
-    3rd - 4th April, 2025
-</h2>
                             
-                            <style>
-                            @keyframes glowDate {
-                              0% {
-                                text-shadow: 0 0 5px #398ad2, 0 0 10px #1380b7, 0 0 15px #33aaff, 0 0 20px #00aaff;
-                              }
-                              100% {
-                                text-shadow: 0 0 10px #1acaff, 0 0 20px #40c3ff, 0 0 30px #00a6ff, 0 0 40px #00d0ff;
-                              }
-                            }
-                            </style>
-                        
-                       
-                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s" style="
-    font-size: 65px;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif; /* Updated color */
-    
-    font-weight: bold;
-    letter-spacing: 2px;">
-Technical Symposium 2025</h3>
-
-<style>
-@keyframes glowSymposium {
-    0% {
-        text-shadow: 0 0 5px rgba(32, 86, 201, 0.5),
-                     0 0 10px rgba(12, 134, 241, 0.836);
-    }
-    100% {
-        text-shadow: 0 0 10px rgba(16, 72, 226, 0.8),
-                     0 0 20px rgba(255, 105, 180, 0.8),
-                     0 0 30px rgba(46, 125, 215, 0.5);
-    }
-}
-</style>
-                    
+                            <h1 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">
+                                BAPUJI INSTITUTE OF ENGINEERING AND TECHNOLOGY
+                            </h1>
                             
+                            <h2 class="glow_title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                                CODEVINYAS 1.0
+                            </h2>
+                            
+                            <h2 class="event_date wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                3rd & 4th April, 2025
+                            </h2>
+                            
+                            <h3 class="tech_symposium wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">
+                                Technical Symposium 2025
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -299,7 +324,7 @@ Technical Symposium 2025</h3>
                                     <img src="img/performer/2.png" alt="">
                                 </div>
                                 <div class="performer_heading">
-                                    <h4>Paper Presentations</h4>
+                                    <h4>Paper Presentation</h4>
                                     <span>Paper Presentation</span>
                                 </div>
                             </div></a>
@@ -345,7 +370,7 @@ Technical Symposium 2025</h3>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Collage</h4>
-                                    <span>Collage</span>
+                                    <span>Creative ArtWork</span>
                                 </div>
                             </div></a>
                         </div>
@@ -357,51 +382,94 @@ Technical Symposium 2025</h3>
     <!-- performar_area_end  -->
 
     <!-- about_area_start  -->
-    <div class="about_area black_bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section_title text-center mb-80">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About Program</h3>
-                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">A National Symposium in a
-                            college is a formal academic event that brings together students, researchers, and
-                            professionals to discuss emerging trends, innovations, and research in a specific field. It
-                            features keynote speeches, paper presentations, panel discussions, and networking
-                            opportunities to foster knowledge exchange and collaboration..</p>
+    <div class="about_area black_bg" style="padding: 80px 0;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section_title text-center mb-80">
+                    <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="
+                        color: #ffffff;
+                        font-size: 36px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        font-family: 'Times New Roman', Times, serif;
+                        letter-spacing: 2px;
+                    ">About Program</h3>
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" style="
+                        color: #a8a8a8;
+                        font-size: 16px;
+                        line-height: 1.8;
+                        margin-bottom: 0;
+                    ">A National Symposium in a college is a formal academic event that brings together students, researchers, and professionals to discuss emerging trends, innovations, and research in a specific field. It features keynote speeches, paper presentations, panel discussions, and networking opportunities to foster knowledge exchange and collaboration.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6">
+                <div class="about_thumb" style="
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                ">
+                    <div class="thumb_inner" style="
+                        position: relative;
+                        width: 100%;
+                        height: 0;
+                        padding-bottom: 56.25%;
+                    ">
+                        <img src="img/about/about.png" alt="" style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: transform 0.3s ease;
+                        ">
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6">
-                    <div class="about_thumb">
-                        <div class="shap_3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
-                            <img src="img/shape/shape_3.svg" alt="">
-                        </div>
-                        <div class="thumb_inner  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                            <img src="img/about/about.png" width="900px" height="400px" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="about_info pl-68">
-                        <h4 class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">It’s time to Attend the
-                            Symposium</h4>
-                        <p class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Attending a National
-                            Symposium provides an excellent opportunity to gain insights from experts, researchers, and
-                            industry leaders in your field. You'll be exposed to the latest trends, research findings,
-                            and technological innovations. Additionally, it offers a platform for networking with
-                            professionals, academics, and fellow students, fostering collaborations and career
-                            opportunities.</p>
-                        <a href="performer.html" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s"
-                            data-wow-delay=".4s"
-                            style="background: linear-gradient(135deg, rgb(16, 12, 12), navy); color: white; border: none; padding: 12px 24px; font-size: 18px; cursor: pointer; border-radius: 8px; transition: all 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);"
-                            onmouseover="this.style.boxShadow='0 8px 20px rgba(0, 255, 0, 0.7)'; this.style.transform='translateY(-2px)';"
-                            onmouseout="this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.5)'; this.style.transform='translateY(0)';">Register</a>
-                    </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="about_info" style="
+                    padding-left: 50px;
+                    @media (max-width: 768px) {
+                        padding-left: 15px;
+                        padding-top: 30px;
+                    }
+                ">
+                    <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" style="
+                        color: #ffffff;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                        font-family: 'Times New Roman', Times, serif;
+                    ">It's time to Attend the Symposium</h4>
+                    <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s" style="
+                        color: #a8a8a8;
+                        font-size: 16px;
+                        line-height: 1.8;
+                        margin-bottom: 30px;
+                    ">Attending a National Symposium provides an excellent opportunity to gain insights from experts, researchers, and industry leaders in your field. You'll be exposed to the latest trends, research findings, and technological innovations.</p>
+                    <a href="performer.html" class="boxed-btn3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s" style="
+                        display: inline-block;
+                        background: linear-gradient(135deg, rgb(16, 12, 12), navy);
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        font-size: 18px;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        transition: all 0.3s ease-in-out;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                        text-decoration: none;
+                    " onmouseover="this.style.boxShadow='0 8px 20px rgba(0, 255, 0, 0.7)'; this.style.transform='translateY(-2px)';" 
+                    onmouseout="this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.5)'; this.style.transform='translateY(0)';">Register</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- about_area_end  -->
 
     <div class="program_details_area detials_bg_1 overlay2">
@@ -508,6 +576,7 @@ Technical Symposium 2025</h3>
                                     <img src="img/program_details/6.png" alt="">
                                 </div>
                                 <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Collage</h4>
+
                             </div>
                         </div>
                     </div>
